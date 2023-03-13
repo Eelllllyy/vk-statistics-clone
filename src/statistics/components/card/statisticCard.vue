@@ -3,7 +3,10 @@
     <h3><slot name="header"></slot></h3>
     <div class="statistic-card-subblock">
       <div><slot name="friends"></slot></div>
-      <div><slot name="static"></slot></div>
+      <div class="static-content">
+        <div><slot name="static"></slot></div>
+        <div class="arrow"><slot name="arrow"></slot></div>
+      </div>
     </div>
   </div>
 </template>
@@ -18,9 +21,19 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 24px;
+  margin: 50px 0;
 }
 .statistic-card-subblock{
   display: flex;
   justify-content: space-between;
+}
+.static-content{
+  display: flex;
+}
+.arrow{
+  margin-left: 5px;
+}
+.statistic-card:hover{
+  background: #e5e5f0;
 }
 </style>
