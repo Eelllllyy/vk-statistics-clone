@@ -1,5 +1,5 @@
 <template>
-  <main class="statistics-main">
+  <main class="statistics-main" :class="[changeTheme? 'lightTheme' : 'darkTheme' ]">
     <statisticsHeader/>
     <section class="statistics-section">
       <statisticCard v-for="card in guestsCard">
@@ -19,13 +19,20 @@ import statisticCard from '@/statistics/components/card/statisticCard.vue';
 import { guestsCard } from '@/statistics/statisticsService';
 import ChartGenderAge from '@/statistics/components/chart/chartGenderAge.vue';
 import ChartDevice from '@/statistics/components/chart/chartDevice.vue';
+import { changeTheme } from '@/common/commonService'
 
 </script>
 <style scoped>
 .statistics-main{
-  background: #EFF3F9;
   width: 100vw;
   height: 100vh;
+}
+.lightTheme{
+  background-color: #EFF3F9;
+}
+.darkTheme{
+  background: #212427;
+  color: white;
 }
 .statistics-section{
   margin: 0px 50px 0 120px;
@@ -33,8 +40,4 @@ import ChartDevice from '@/statistics/components/chart/chartDevice.vue';
   justify-content: space-between;
   flex-wrap: wrap;
 }
-/* .chart-device{
-  width: 288px !important;
- height: 242px !important;
-} */
 </style>

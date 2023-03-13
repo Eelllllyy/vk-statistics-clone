@@ -1,5 +1,5 @@
 <template>
-  <header class="common-header">
+  <header class="common-header" :class="[changeTheme? 'lightTheme' : 'darkTheme' ]">
     <nav class="navbar flex">
       <img src="@/navbar/assets/logo-vk.svg" class="img-logo">
       <div class="img-block flex">
@@ -11,11 +11,12 @@
         <img src="@/navbar/assets/statistics.svg" class="img-statistics">
         <img src="@/navbar/assets/settings.svg" class="img-settings">
       </div>
-      <img src="@/navbar/assets/tumbler.svg" class="img-tumbler">
+      <img src="@/navbar/assets/tumbler.svg" class="img-tumbler" @click="changeTheme = !changeTheme">
     </nav>
   </header>
 </template>
 <script setup>
+import {changeTheme } from '@/common/commonService'
 </script>
 <style scoped>
 .common-header{
@@ -24,7 +25,12 @@
   bottom: 0;
   width: 98px;
   z-index: 10;
+}
+.lightTheme{
   background-color: white;
+}
+.darkTheme{
+  background: #282C31;
 }
 .navbar{
   height: 100vh;
