@@ -23,6 +23,8 @@
   top: 0;
   bottom: 0;
   width: 98px;
+  z-index: 10;
+  background-color: white;
 }
 .navbar{
   height: 100vh;

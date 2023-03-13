@@ -1,9 +1,11 @@
 <template>
   <CommonNavbar/>
+  <Statistics/>
 </template>
 
 <script setup>
 import CommonNavbar from '@/navbar/components/commonNavbar.vue';
+import Statistics from '@/statistics/page/statistics.vue';
 
 </script>
 <style>
