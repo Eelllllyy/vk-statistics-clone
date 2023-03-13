@@ -1,5 +1,5 @@
 <template>
-  <header class="common-header" :class="[changeTheme? 'lightTheme' : 'darkTheme' ]">
+  <header class="common-header" :class="[changeTheme? 'lightTheme' : 'darkTheme']">
     <nav class="navbar flex">
       <img src="@/navbar/assets/logo-vk.svg" class="img-logo">
       <div class="img-block flex">
@@ -11,14 +11,65 @@
         <img src="@/navbar/assets/statistics.svg" class="img-statistics">
         <img src="@/navbar/assets/settings.svg" class="img-settings">
       </div>
-      <img src="@/navbar/assets/tumbler.svg" class="img-tumbler" @click="changeTheme = !changeTheme">
+      <button class="btn" @click="changeTheme = !changeTheme" >
+      <div :class="[changeTheme? 'lightThemeButton' : 'darkThemeButton']"></div>
+      <div v-if="!changeTheme" class="round-dark"></div>
+    </button>
     </nav>
   </header>
 </template>
 <script setup>
-import {changeTheme } from '@/common/commonService'
+import { changeTheme } from '@/common/commonService'
 </script>
 <style scoped>
+.btn{
+  background: #FDFDFF;
+  border: 0.5px solid #4F4F4F;
+  border-radius: 50px;
+  width: 60px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+}
+.round-dark{
+  background-color: #0d0d16;
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  animation: darkCircle 0.7s linear;
+  animation-duration: 1s;
+}
+@keyframes darkCircle{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+
+  }
+}
+.lightThemeButton{
+  background: #7F7FD5;
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  transition: all 0.5s linear;
+}
+.darkThemeButton{
+  background: #7F7FD5;
+  width: 60px;
+  height: 30px;
+  border-radius: 10px;
+  transition: all 0.5s linear;
+}
 .common-header{
   position: fixed;
   top: 0;

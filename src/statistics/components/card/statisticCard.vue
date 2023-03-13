@@ -15,7 +15,6 @@ import { changeTheme } from '@/common/commonService'
 </script>
 <style scoped>
 .statistic-card{
-  /* background: #FDFDFF; */
   border: 1px solid #EBEBEB;
   border-radius: 13px;
   width: 341px;
