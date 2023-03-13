@@ -1,0 +1,63 @@
+<template>
+  <header class="common-header">
+    <nav class="navbar flex">
+      <img src="@/navbar/assets/logo-vk.svg" class="img-logo">
+      <div class="img-block flex">
+        <img src="@/navbar/assets/home.svg" class="img-home">
+        <img src="@/navbar/assets/news.svg" class="img-news">
+        <img src="@/navbar/assets/friends.svg" class="img-friends">
+        <img src="@/navbar/assets/messages.svg" class="img-messages">
+        <img src="@/navbar/assets/music.svg" class="img-music">
+        <img src="@/navbar/assets/statistics.svg" class="img-statistics">
+        <img src="@/navbar/assets/settings.svg" class="img-settings">
+      </div>
+      <img src="@/navbar/assets/tumbler.svg" class="img-tumbler">
+    </nav>
+  </header>
+</template>
+<script setup>
+</script>
+<style scoped>
+.common-header{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 98px;
+}
+.navbar{
+  height: 100vh;
+}
+.flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.img-block{
+  height: 400px;
+}
+.img-logo{
+  width: 51px;
+  height: 35px;
+}
+.img-home, .img-news, .img-statistics, .img-settings{
+  width: 25px;
+  height: 25px;
+}
+.img-friends{
+  width: 25px;
+  height: 23px;
+}
+.img-messages{
+  width: 25px;
+  height: 17px;  
+}
+.img-music{
+  width: 19px;
+  height: 25px;  
+}
+.img-tumbler{
+  width: 60px;
+  height: 30px;
+}
+</style>
