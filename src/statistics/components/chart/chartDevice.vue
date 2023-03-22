@@ -1,5 +1,5 @@
 <template>
-  <div class="card-content" :class="[changeTheme? 'lightThemeCard' : 'darkThemeCard' ]">
+  <div class="card-content" :class="[changeTheme? 'lightThemeCard' : 'darkThemeCard']">
     <h3>Reach by device</h3>
     <div class="doughnut">
     <Doughnut :data="dataDevice" :options="optionsDevice"/>
@@ -11,7 +11,6 @@ import { dataDevice, optionsDevice } from '@/statistics/statisticsService';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'vue-chartjs';
 import { changeTheme } from '@/common/commonService';
-
 ChartJS.register(ArcElement, Tooltip, Legend)
 </script>
 <style scoped>

@@ -7,7 +7,7 @@
     </div>
     <div class="subblock-statistics-header-two flex">
       <p>Elina</p>
-      <img src="@/statistics/assets/img/logo-user.svg">
+      <img src="@/statistics/assets/img/avatar-logo.svg">
       <button class="statistics-btn-flag"></button>
     </div>
   </header>  
@@ -44,7 +44,7 @@
   width: 10px;
   height: 6px;
   border: none;
-  background-color: none;
+  background-color: inherit;
   cursor: pointer;
 }
 </style>

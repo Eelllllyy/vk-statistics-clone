@@ -17,7 +17,6 @@ const followers = {
   photo: require('@/statistics/assets/img/arrowUp.svg')
 } 
 export const guestsCard = [friends, visitors, followers]
-
 export const dataDevice = {
   labels: ['Desktop', 'Mobile views'],
   datasets: [
@@ -27,7 +26,6 @@ export const dataDevice = {
     }
   ]
 }
-
 export const optionsDevice = {
   responsive: true,
   maintainAspectRatio: false
@@ -56,7 +54,6 @@ export const dataGender = {
     }
   ]
 }
-
 export const optionsGender= {
   responsive: true,
   maintainAspectRatio: false

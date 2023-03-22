@@ -1,5 +1,5 @@
 <template>
-  <div class="card-content" :class="[changeTheme? 'lightThemeCard' : 'darkThemeCard' ]">
+  <div class="card-content" :class="[changeTheme? 'lightThemeCard' : 'darkThemeCard']">
     <div class="bar">
     <h3>Gender / Age</h3>
     <Bar :data="dataGender" :options="optionsGender"></Bar>
