@@ -1,7 +1,7 @@
 # Vk ststistics clone
 
 ## Main technologies:
-1. Vue version - ***3.2.13***
+1. Vue - ***3.2.13***
 2. Vue-chartjs - ***5.2.0***
 3. Chart.js - ***4.2.1***
 
