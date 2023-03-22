@@ -6,7 +6,7 @@
 3. Chart.js - ***4.2.1***
 
 ## Description
-A simple example of vk statistics
+A simple example of VK statistics with using charts
 
 ![light](https://github.com/Eelllllyy/vk-statistics-clone/blob/main/src/screenshots/light-screen.png)
 ![dark](https://github.com/Eelllllyy/vk-statistics-clone/blob/main/src/screenshots/dark-screen.png)
